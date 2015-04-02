@@ -1,0 +1,99 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>西藏青年旅行社总社旅游网</title>
+		<meta content="西藏青年旅行社总社旅游网" name="keywords" />
+		<meta content="" name="description" />
+		<link href="../templates/default/default/css/page_index.css" rel="stylesheet" type="text/css"/>
+		</head>
+	<body>
+<!--内容--> 
+
+
+<style type="text/css">
+ html { overflow-x:hidden; }
+ </style>
+
+<script language="JavaScript">
+$(function() {
+	$('div.left').hover(function(){
+		$(this).children('div').stop(true,true).show();
+	},function(){
+		$(this).children('div').stop(true,true).hide();
+	});
+	$('.leftmenubox').hover(function(){
+		$(this).addClass("leftmenubox_hover");
+		$(this).children("div").show();
+	},function(){
+		$(this).removeClass("leftmenubox_hover");
+		$(this).children("div").hide();
+	});
+})
+</script>
+<!--头部end -->
+<!--<script language="JavaScript">
+$(function(){
+	$("#login").load("/index.php?mod=ajax&ajax=1&login=1");
+})
+function set_favorite(title, url) {
+	try {
+		window.external.AddFavorite(url, title);
+	} catch (e) {
+		if (window.sidebar) {
+			window.sidebar.addPanel(title, url, '');
+		} else {
+			alert('请用ctrl+d收藏网址');
+			return false;
+		}
+	}
+}
+</script>-->
+
+<!--头部end-->
+<div class="topbox">
+	<div class="top">
+		<div class="topleft" id="login"></div>
+		<div class="topright"><a href="/about/91.html" class="topaboutus blue" target="_blank">经营资质</a><span>|</span> 
+			<a href="/about/93.html" class="topaboutus blue" target="_blank">员工风采</a><span>|</span> 
+			<a href="/about/92.html" class="topaboutus blue" target="_blank">办公场所</a><span>|</span> 
+			<a href="#" class="topaboutus blue" onclick="set_favorite()">加入收藏</a> 
+		</div>
+	</div>
+</div>
+
+	<div class="logo"><a href="/"><img src="../templates/default/default/img/logo.jpg" width="1392" height="80"/></a></div>
+
+
+<!--头部end-->
+<div class="topmenubox">
+<div class="topmenu">
+	<ul class="topmenulist">
+		<li class="allsort">全部旅游产品分类</li>
+				
+				<li>
+		<a href="../main.html" title="首页"  target="_parent">首&nbsp;页</a>
+		</li>
+				<li>
+		<a href="../line.html" title="线路"  target="_parent">线&nbsp;路</a>
+		</li>
+				
+				<li>
+		<a href="../scene.html" title="景点"  target="_parent">景&nbsp;点</a>
+		</li>
+				<li>
+		<a href="../hotel.html" title="酒店"  target="_parent">酒&nbsp;店</a>
+		</li>
+				<li>
+		<a href="../product.html" title="特产" target="_parent" >特&nbsp;产</a>
+		</li>
+				<li>
+		<a href="../food.html" title="美食" target="_parent">美&nbsp;食</a>
+		</li>
+			</ul>
+</div>
+</div>
+<!--头部end-->
+</body>
+</html>

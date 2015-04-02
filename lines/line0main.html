@@ -1,0 +1,302 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>西藏青年旅行社总社旅游网-西藏青年旅行社总社旅游网</title>
+		<meta content="西藏青年旅行社总社旅游网" name="keywords" />
+		<meta content="" name="description" />
+		<link href="../templates/default/default/css/page_line.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="../templates/default/default/js/jcarousellite_1.0.1.min.js"></script>
+        <script language="JavaScript">
+			$(function() {
+				$(".linepic").jCarouselLite({
+					btnNext: ".premenu",
+					btnPrev: ".nextmenu",
+					scroll: 1,
+					visible: 1,
+					auto: 5000
+				});
+				//导航固定
+				var ie6 = /msie 6/i.test(navigator.userAgent),dv = $('#fixedMenu'),st;
+				dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+				$(window).scroll(function(){
+					st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+					if (st >= parseInt(dv.attr('otop'))) {
+						if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
+							dv.css({ position: 'absolute', top: st });
+						}
+						else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', top: 0 });
+					} 
+					else if (dv.css('position') != 'static') dv.css({ 'position': 'static' });
+				});
+				var $div_li = $("div.detail ul li");
+				$div_li.click(function() {
+				   $(this).addClass("here").siblings().removeClass("here"); //去掉其它同辈<li>元素的高亮
+				   var index = $div_li.index(this); // 获取当前点击的<li>元素 在 全部li元素中的索引。
+				   $("div.tab_box > div").eq(index).show().siblings().hide(); //隐藏其它几个同辈的<div>元素
+				});
+
+				//旅游顾问
+				var $consultant_li = $("ul.adviserlist li");
+				$consultant_li.hover(function() {
+				   $(this).addClass("here").siblings().removeClass("here"); //去掉其它同辈<li>元素的高亮
+				   var index = $consultant_li.index(this); // 获取当前点击的<li>元素 在 全部li元素中的索引。
+				   $("div.adviserbox > div").eq(index).show().siblings().hide(); //隐藏其它几个同辈的<div>元素
+				});
+				
+				$(".but01").hover(function(){
+					$(".help01").show();
+				},function () {
+					$(".help01").hide();
+				});
+
+				$(".but02").hover(function(){
+					$(".help02").show();
+				},function () {
+					$(".help02").hide();
+				});
+			})
+			function doPrint() { 
+				bdhtml=window.document.body.innerHTML; 
+				sprnstr="<!--startprint-->"; 
+				eprnstr="<!--endprint-->"; 
+				prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+				prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+				window.document.body.innerHTML=prnhtml; 
+				window.print(); 
+			}
+		</script>
+
+		</head>
+	<body>
+<!--内容--> 
+
+<!--头部end -->
+<div class="nav">
+	<ul class="clearfix">
+		<li><a href="">首页</a></li>
+		<li class="li01">>></li>
+		<li><拉萨市内4日游></li>
+	</ul>
+</div>
+<div class="linetitle"><span class="lineno">线路编码：SRY1</span><拉萨市内4日游></div>
+<div class="linebox clearfix">
+	<div class="linebox_left">
+		<div class="linepicbox">
+			<div class="premenu"> <a href="#"> </a> </div>
+			<div class="nextmenu"> <a href="#"> </a> </div>
+			<div class="linepic">
+				<ul>
+										<li><img src="../static/pic/1.jpg"/></li>
+			  </ul>
+			</div>
+		</div>
+
+	</div>
+	<div class="linebox_right">
+		<div class="helpbox help01 hide">起价说明
+</div>
+		<div class="helpbox help02 hide"><p>
+	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="font-size: 16px; ">我们大力推广&ldquo;</span><strong style="font-size: 16px; ">网订优惠</strong><span style="font-size: 16px; ">&rdquo;政策，通过网站预订您不但可以享受到和线下预定一样的优惠，还可能享受到某些产品在线预订的&ldquo;</span><strong style="font-size: 16px; ">专享</strong><span style="font-size: 16px; ">&rdquo;优惠。</span></p>
+<p>
+	<span style="font-size:16px;">&nbsp; &nbsp; &nbsp; 您只需留下您的&ldquo;<strong>手机+座机+邮箱</strong>&rdquo;的联系方式，并注明您心仪的<strong>线路</strong>和出行<strong>时间</strong>及出行<strong>人数</strong>，我们的客服将在第一时间联系您。</span></p>
+<p>
+	<span style="font-size:16px;">&nbsp; &nbsp; &nbsp; 您也可以下单后直接拨打我们24小时免费电话4006 365 001联系我们的客服，或在上班时间9:00-18:00致电我们的客服人员为您服务。</span></p>
+</div>
+		<p class="price01">市场价：<span class="fb f16 pr10">21800元</span></p>
+		<p class="price02">优惠价：<span class="orange01 fb f16 pr10">20800元起</span></p>
+		<div class="detail01 mt10">
+			<ul class="clearfix">
+				<li class="li01">推荐指数：<span class="orange01">0</span></li>
+				<li>出发城市：不限</li>
+				<li>行程天数：11天</li>
+				<li class="li01">往返交通：飞机</li>
+				<li class="li01">住宿标准：当地三、四星级酒店</li>
+
+			</ul>
+		</div>
+	
+  </div>
+		</div>
+	</div>
+</div>
+<div class="featurebox mt10">
+	<h3>行程特色</h3>
+	<div class="box">
+		<p><strong>Day 01: Arrive in Lhasa.</strong><br />
+Flying in an airplane or a train arrived in Lhasa<br />
+乘飞机或火车抵达拉萨  <br />
+<strong>Day 02: Lhasa city sightseeing.<br />
+</strong>Visit the  magnificent Potala Palace, the Jokhang Temple,  the thriving bazaar of the Barkhor    Street. <br />
+参观布达拉宫、大昭寺、八角街自由市场 <br />
+<strong>Day 03</strong><strong>：</strong><strong>Lhasa city  sightseeing.</strong><br />
+Visit the<strong> </strong>Drepung Monastery, the Sera Monastery, the Norbulingka Park  the Tibet Museum.<strong> </strong><br />
+参观哲蚌寺、色拉寺、罗布林卡、西藏博物馆 <br />
+<strong>Day 04: Leave  the Lhasa</strong><br />
+离开拉萨 <br />
+	&nbsp;</p>
+
+  </div>
+</div>
+<div class="detail mt10">
+	<div id="fixedMenu">
+		<h3>
+		<ul class="detail_title_tab clearfix">
+			<li class="here">详细行程</li>
+			<li>费用说明</li>
+			<li>温馨提示</li>
+			<li>相关线路</li>
+		</ul>
+		<div class="printmenu" onclick="doPrint();"></div>
+		</h3>
+	</div>
+	<div class="tab_box">
+		<div class="detailbox">
+			<!--startprint-->
+			<div class="p10">
+				<!--详细行程-->
+				<div>
+
+					<div class="tripbox">
+												<div class="commonday mt20" id="day1">
+							<div class="title">
+								<span class="f14 white">第1天</span>
+								<span class="pl20">乘飞机或火车抵达拉萨</span>
+							</div>
+							<div class="box">
+								<p>到拉萨了！</p>
+                                <p>
+	<img alt="" src="/upload/images/6647776_135726403155_2.jpg" style="width: 300px; height: 210px;" /></p>
+
+							</div>
+								<div class="todaytrip mt20">三星级或四星级酒店休息</div>
+								<div class="box"></div>
+
+						   </div>
+						</div>
+				</div>
+				
+				
+				<div>
+					<div class="tripbox">
+												<div class="commonday mt20" id="day1">
+							<div class="title">
+								<span class="f14 white">第2天</span>
+								<span class="pl20">参观布达拉宫、大昭寺、八角街自由市场</span>
+							</div>
+
+								<div class="todaytrip mt20">提供午餐、晚餐</div>
+								<div class="box"></div>
+
+						   </div>
+						</div>
+				</div>
+				
+				
+				<div>
+					<div class="tripbox">
+												<div class="commonday mt20" id="day1">
+							<div class="title">
+								<span class="f14 white">第3天</span>
+								<span class="pl20">参观哲蚌寺、色拉寺、罗布林卡、西藏博物馆</span>
+							</div>
+
+								<div class="todaytrip mt20">提供午餐、晚餐</div>
+								<div class="box"></div>
+
+						   </div>
+						</div>
+				</div>
+				
+				<div>
+
+					<div class="tripbox">
+												<div class="commonday mt20" id="day1">
+							<div class="title">
+								<span class="f14 white">第4天</span>
+								<span class="pl20">离开拉萨</span>
+							</div>
+
+								<div class="todaytrip mt20">安全回家</div>
+								<div class="box"></div>
+
+						   </div>
+						</div>
+				</div>
+				
+				<!--详细行程-->
+			</div>
+			<!--endprint-->
+		</div>
+		<!--费用说明-->
+		<div class="feesbox mt10">
+			<h3>费用说明</h3>
+			<div class="box">
+				<p>
+	报价包含以下服务：<br />
+	1、中式午、晚餐（五菜一汤，用餐时间在飞机或船上以机船餐为准，不再另退餐费）；<br />
+	2、全程旅游巴士及专业司机；<br />
+	3、全程中文领队兼导游服务；<br />
+	4、行程中景点的首道门票；<br />
+	5、旅游人身意外险；<br />
+	6、旅行社责任险。<br />
+	报价不包含以下服务：<br />
+	1、洗衣、理发、电话、饮料、烟酒、付费电视、行李搬运等私人费用；<br />
+	2、行程中未提及的景点游览及其他费用，如特殊门票、游船（轮）、缆车、地铁票等费用；<br />
+	3、因交通延阻、罢工、大风、大雾、航班取消或更改时间等人力不可抗拒原因所引致的额外费用；<br />
+	4、签证相关的例如未成年人公证，认证等相关费用。<br />
+	备注：<br />
+	1、上述行程次序、景点、航班及住宿地点可能临时变动、修改或更换，最终行程以出发前我公司确认的行程为准；<br />
+	2、我公司保留因航空公司、签证、政府、天气等因素而更改行程和追加差价的权利。</p>
+<p>&nbsp;
+	</p>
+
+			</div>
+		</div>
+		<!--费用说明-->
+		<!--温馨提示-->
+		<div class="feesbox mt10">
+			<h3>温馨提示</h3>
+			<div class="box">
+				<p>
+	1、行程中所列航班号及时间仅供参考，将根据实际情况做出合理的调整；<br />
+	2、依照旅游业现行作业规定，本公司有权依据最终出团人数情况，调整房间分房情况。</p>
+
+			</div>
+		</div>
+		<!--温馨提示-->
+
+		<div class="correlativeline mt10">
+			<h3><span class="title">相关线路</span></h3>
+			<div class="box">
+				<ul class="aboutlinelist clearfix">
+									<li><span class="price">￥15800元</span><a href="http://tibettravel.byethost16.com/line/201307/364.html" target="_blank" class="title1"><拉萨、纳木错 4日游></a><a href="http://tibettravel.byethost16.com/line/201307/364.html" target="_blank" class="title2"></a></li>
+									<li><span class="price">￥20500元</span><a href="http://tibettravel.byethost16.com/line/201307/345.html" target="_blank" class="title1"><拉萨、江孜 日喀则 6日游></a><a href="http://tibettravel.byethost16.com/line/201307/345.html" target="_blank" class="title2"></a></li>
+									<li><span class="price">￥20800元</span><a href="http://tibettravel.byethost16.com/line/201307/342.html" target="_blank" class="title1"><拉萨、纳木错、日喀则、珠峰 8日游></a><a href="http://tibettravel.byethost16.com/line/201307/342.html" target="_blank" class="title2"></a></li>
+									<li><span class="price">￥24900元</span><a href="http://tibettravel.byethost16.com/line/201307/338.html" target="_blank" class="title1"><拉萨、纳木错、泽当、江孜、日喀则 9日游></a><a href="http://tibettravel.byethost16.com/line/201307/338.html" target="_blank" class="title2"></a></li>
+								</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--底部导航-->
+<div class="footer">
+		<div class="foottop">
+			<a href="/about/index.html" class="topaboutus green01" target="_blank">关于我们</a><span> | </span> 
+			<a href="/about/91.html" class="topaboutus green01" target="_blank">经营资质</a><span> | </span> 
+			<a href="/about/93.html" class="topaboutus green01" target="_blank">员工风采</a><span> | </span> 
+			<a href="/about/92.html" class="topaboutus green01" target="_blank">办公场所</a><span> | </span>
+			<a href="/about/71.html" class="topaboutus green01" target="_blank">联系我们</a>
+		</div>
+		<div class="copyright">
+			<p> Copyright © 2009-2014  版权所有. travelcms</p>
+			<p>客服电话：010-58480317  </p>
+		</div>
+ </div>
+<!-- 版权 结束 -->
+
+
+</body>
+</html>

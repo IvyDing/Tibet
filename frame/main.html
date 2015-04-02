@@ -1,0 +1,490 @@
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>西藏青年旅行社总社旅游网</title>
+		<meta content="西藏青年旅行社总社旅游网" name="keywords" />
+		<meta content="" name="description" />
+		<link href="../templates/default/default/css/page_index.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="../static/js/jquery.textRemindAuto-1.0.js"></script>
+		<script type="text/javascript" src="../static/js/lhgcalendar/lhgcalendar.min.js"></script>
+		<script type="text/javascript" src="../templates/default/default/js/jcarousellite_1.0.1.min.js">    </script>
+		<script type="text/javascript" src="../templates/default/default/js/foot.js">    </script>
+		<script language="JavaScript">
+			$(function() {
+				$(".flashpic").jCarouselLite({
+					btnNext: ".premenu",
+					btnPrev: ".nextmenu",
+					scroll: 1,
+					visible: 1,
+					auto: 5000
+				});
+				$('.leftmenubox').hover(function(){
+					$(this).addClass("leftmenubox_hover");
+					$(this).children("div").show();
+				},function(){
+					$(this).removeClass("leftmenubox_hover");
+					$(this).children("div").hide();
+				});
+
+				//签证
+				var $visa_li = $("ul.visa_tab li");
+				$visa_li.hover(function() {
+				   $(this).addClass("here").siblings().removeClass("here"); //去掉其它同辈<li>元素的高亮
+				   var index = $visa_li.index(this); // 获取当前点击的<li>元素 在 全部li元素中的索引。
+				   $("div.visabox > div").eq(index).show().siblings().hide(); //隐藏其它几个同辈的<div>元素
+				});
+
+				//搜索
+				var $search_li = $("ul.indexsearch_tab li");
+				$search_li.click(function() {
+				   $(this).addClass("here").siblings().removeClass("here"); //去掉其它同辈<li>元素的高亮
+				   var index = $search_li.index(this); // 获取当前点击的<li>元素 在 全部li元素中的索引。
+				   $("div.searchboxbox > p").eq(index).show().siblings().hide(); //隐藏其它几个同辈的<div>元素
+				});
+				
+				//城市选择
+				$("input[name='departure_city']").click(function(event){
+					event.stopPropagation();
+					$(".citylist01").show();
+				});
+
+				$('.city01').click(function() {
+					$("input[name='departure_city']").val($(this).text());
+					$(".citylist01").hide();
+				});
+
+				$("input[name='arrival_city']").click(function(event) {
+					event.stopPropagation();
+					$(".citylist02").show();
+				});
+				$('.city02').click(function() {
+					$("input[name='arrival_city']").val($(this).text());
+					$(".citylist02").hide();
+				});
+
+				$("input[name='arrival_city_en']").click(function(event) {
+					event.stopPropagation();
+					$(".citylist03").show();
+				});
+				$('.city03').click(function() {
+					$("input[name='arrival_city_en']").val($(this).text());
+					$(".citylist03").hide();
+				});
+
+				$(document).click(function(event){
+					$(".citylist01").hide();
+					$(".citylist02").hide();
+					$(".citylist03").hide();
+					$(".pricelist").hide();
+				});  
+
+				$('.close').click(function() {
+					$(".citylist01").hide();
+					$(".citylist02").hide();
+					$(".citylist03").hide();
+					$(".pricelist").hide();
+				});
+				
+				//价格区间
+				$("input[name='price']").click(function(event){
+					event.stopPropagation();
+					$(".pricelist").show();
+				});
+
+				$('.price_span').click(function() {
+					$("input[name='price']").val($(this).text());
+					$(".pricelist").hide();
+				});
+
+				//日期选择
+				$('#demo_inp1').calendar();
+				
+				//输入框提示
+				$(".remindAuto").textRemindAuto();
+				$(".borderChange").textRemindAuto({chgClass: "border"});
+				$("#textColorChg").textRemindAuto({
+					focusColor: "red"							  
+				});
+			})
+		</script>
+		</head>
+<div class="main clearfix">
+	<div class="main_left">
+		<div class="leftmenu">
+						<div class="leftmenubox">
+				<div class="leftmenubigbox hide">
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">4日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="../lines/line1.html">拉萨市内&nbsp;&nbsp;
+															                 <br>
+																			 <a href="../foods/food1.html">拉萨、纳木错</a></span>
+
+											  </div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">6日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">拉萨、江孜 日喀则</a></span>
+
+											  </div>
+						</div><div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">7日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">拉萨、纳木错、林芝巴松错、大峡谷、鲁朗风景区</a></span>
+
+						  </div>
+						</div><div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">8日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">拉萨、纳木错、日喀则、珠峰</a></span>
+
+						  </div>
+						</div><div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">9日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">拉萨、纳木错、泽当、江孜、日喀则&nbsp;&nbsp;
+															                 <br>
+																			 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">西宁、拉萨、林芝、纳木错&nbsp;（沿青藏铁路）</a></span>
+						  </div>
+						</div><div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">10日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">成都、林芝、拉萨、江孜 日喀则、珠峰&nbsp;&nbsp;
+															                 <br>
+																			 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">成都-林芝、大峡谷、鲁朗放景区、巴松错、拉萨、纳木错、日喀则、珠峰</a></span>
+						  </div>
+						</div><div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%AC%A7%E6%B4%B2">11日游</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%BF%84%E7%BD%97%E6%96%AF">拉萨、纳木错、泽当、江孜、日喀则、珠峰</a></span>
+
+						  </div>
+						</div>
+						  </div>
+				<h3>线路</h3>
+			</div>
+						
+						<div class="leftmenubox">
+				<div class="leftmenubigbox hide">
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E8%8D%89%E5%8E%9F">拉萨</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">布达拉宫&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">大昭寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">色拉寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">哲蚌寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">罗布林卡&nbsp;&nbsp;
+																			 <br>
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">西藏博物馆&nbsp;&nbsp;
+														                     <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">八角街自由市场</a></span>
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%B5%B7%E6%BB%A8">日喀则</a></h4>
+							<div class="fl">
+																						<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">布达拉宫&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">萨迦寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">绒布寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">珠峰大本营&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">扎什伦布寺&nbsp;&nbsp;
+															                 </a></span>
+														</div>
+														
+						</div>
+						
+						<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%B5%B7%E6%BB%A8">林芝</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">鲁朗风景区&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">攻错湖景区&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">杂西岗民族村&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">雅鲁藏布大峡谷&nbsp;&nbsp;
+															                 </a></span>
+														</div>
+														
+						</div>
+						
+						<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%B5%B7%E6%BB%A8">江孜</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">羊卓雍湖&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">卡若拉冰川&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">白居寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">万佛塔&nbsp;&nbsp;
+															                 </a></span>
+														</div>
+														
+						</div>
+						
+						<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E6%B5%B7%E6%BB%A8">泽当</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">藏王墓&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">昌珠寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">绒布寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">桑耶寺&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">雍布拉康&nbsp;&nbsp;
+															                 </a></span>
+														</div>
+														
+						</div>
+						
+						
+						
+									</div>
+				<h3>景点</h3>
+			</div>
+						<div class="leftmenubox">
+				<div class="leftmenubigbox hide">
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%8C%97%E4%BA%AC%E4%BC%91%E9%97%B2%E4%B8%80%E6%97%A5%E6%B8%B8">五星级</a></h4>
+							<div class="fl">
+							 								<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">拉萨瑞吉渡假酒店&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">拉萨香格里拉大酒店&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">拉萨圣地天堂洲际大饭店&nbsp;&nbsp;
+																			 <br>
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">开元拉萨饭店&nbsp;&nbsp;
+															                 <a href="/index.php?mod=search&ac=search&keywords=%E5%AE%89%E5%9B%BA%E9%87%8C">呈祥东馆&nbsp;&nbsp;
+															                 </a></span>
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%8C%97%E4%BA%AC%E7%B2%BE%E5%93%81%E7%BA%AF%E7%8E%A9%E6%B8%B8">四星级</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%8C%97%E4%BA%AC%E4%BC%91%E9%97%B2%E5%93%81%E8%B4%A8%E6%B8%B8">三星级</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%8C%97%E4%BA%AC%E5%85%A8%E6%99%AF%E7%89%B9%E4%BB%B7%E6%B8%B8">便捷</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+									</div>
+				<h3>酒店</h3>
+			</div>
+						<div class="leftmenubox">
+				<div class="leftmenubigbox hide">
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%9B%BD%E5%86%85">国内</a></h4>
+							<div class="fl">
+															<span class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E4%B8%BD%E6%B1%9F">丽江</a></span>
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E5%9B%BD%E9%99%85">国际</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+									</div>
+				<h3>特产</h3>
+			</div>
+						<div class="leftmenubox">
+				<div class="leftmenubigbox hide">
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8">红色旅游</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+											<div class="subleftmenu clearfix">
+							<h4 class="fl"><a href="/index.php?mod=search&ac=search&keywords=%E8%9C%9C%E6%9C%88%E6%97%85%E6%B8%B8">蜜月旅游</a></h4>
+							<div class="fl">
+														</div>
+						</div>
+									</div>
+				<h3>美食</h3>
+				<p class="com"><a href="/index.php?mod=search&ac=search&keywords=%E7%BA%A2%E8%89%B2%E6%97%85%E6%B8%B8">红色旅游</a>&nbsp;&nbsp;<a href="/index.php?mod=search&ac=search&keywords=%E8%9C%9C%E6%9C%88%E6%97%85%E6%B8%B8">蜜月旅游</a>&nbsp;&nbsp;</p>
+			</div>
+					</div>
+		<div class="commonbox mt10">
+			<h3><a href="/news/list_53.html" target="_blank">旅行社推荐</a></h3>
+			<div class="box2">
+				<ul class="lxslist">
+					<li>
+						<p class="p01"><a href="#">北京神舟国旅</a></p>
+						<p class="p02">北京神舟国旅集团5A级旅行社，专业出境、国内旅游，电话010-51651898</p>
+					</li>
+					<li>
+						<p class="p01"><a href="#">北京神舟国旅</a></p>
+						<p class="p02">北京神舟国旅集团5A级旅行社，专业出境、国内旅游，电话010-51651898</p>
+					</li>
+					<li>
+						<p class="p01"><a href="#">北京神舟国旅</a></p>
+						<p class="p02">北京神舟国旅集团5A级旅行社，专业出境、国内旅游，电话010-51651898</p>
+					</li>
+					<li>
+						<p class="p01"><a href="#">北京神舟国旅</a></p>
+						<p class="p02">北京神舟国旅集团5A级旅行社，专业出境、国内旅游，电话010-51651898</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script language="JavaScript">
+$(function(){
+	var $hotline_li = $("div.h3_tab ul li");
+    $hotline_li.mouseover(function() {
+       $(this).addClass("here").siblings().removeClass("here");
+       var index = $hotline_li.index(this);
+       $("div.hotlinebox > ul").eq(index).show().siblings().hide();
+    })
+});
+</script>
+<div class="commonbox mt10">
+	<div class="h3_tab">
+		<div class="line">
+		</div>
+		<ul>
+			<li class="here">经典游TOP</li>
+			<li>蜜月游TOP</li>
+		</ul>
+	</div>
+	<div class="box hotlinebox">
+		<ul class="ranklist">
+						<li><span class="fr orange01">￥20800起</span><a href="http://localhost/line/201307/367.html"><英国爱尔兰经.</a></li>
+						<li><span class="fr orange01">￥20000起</span><a href="http://localhost/line/201307/366.html"><俄罗斯+北欧（.</a></li>
+						<li><span class="fr orange01">￥15800起</span><a href="http://localhost/line/201307/364.html"><英格兰、苏格.</a></li>
+						<li><span class="fr orange01">￥17000起</span><a href="http://localhost/line/201307/363.html"><芬兰、瑞典、.</a></li>
+						<li><span class="fr orange01">￥17500起</span><a href="http://localhost/line/201307/360.html"><芬兰、瑞典、.</a></li>
+						<li><span class="fr orange01">￥18800起</span><a href="http://localhost/line/201307/358.html"><俄罗斯、芬兰.</a></li>
+						<li><span class="fr orange01">￥19800起</span><a href="http://localhost/line/201307/352.html"><俄罗斯、芬兰.</a></li>
+						<li><span class="fr orange01">￥18800起</span><a href="http://localhost/line/201307/347.html"><情定爱琴海-希.</a></li>
+						<li><span class="fr orange01">￥19300起</span><a href="http://localhost/line/201307/346.html"><南欧风情-西班.</a></li>
+						<li><span class="fr orange01">￥20800起</span><a href="http://localhost/line/201307/342.html"><英国爱尔兰经.</a></li>
+					</ul>
+		<ul class="ranklist hide">
+						<li><span class="fr orange01">￥3080起</span><a href="http://localhost/line/201307/378.html"><宜昌、三峡大.</a></li>
+						<li><span class="fr orange01">￥3040起</span><a href="http://localhost/line/201307/377.html"><黄山观日出、.</a></li>
+						<li><span class="fr orange01">￥4180起</span><a href="http://localhost/line/201307/373.html"><大美西藏全景.</a></li>
+						<li><span class="fr orange01">￥2150起</span><a href="http://localhost/line/201307/370.html"><黄山观日出、.</a></li>
+						<li><span class="fr orange01">￥1980起</span><a href="http://localhost/line/201307/359.html"><红旗渠+太行山.</a></li>
+						<li><span class="fr orange01">￥2320起</span><a href="http://localhost/line/201307/337.html"><庐山+三叠泉+.</a></li>
+						<li><span class="fr orange01">￥4190起</span><a href="http://localhost/line/201307/328.html"><南宁+巴马（长.</a></li>
+						<li><span class="fr orange01">￥2200起</span><a href="http://localhost/line/201307/327.html"><南宁+德天大瀑.</a></li>
+						<li><span class="fr orange01">￥4180起</span><a href="http://localhost/line/201307/324.html"><大美西藏全景.</a></li>
+						<li><span class="fr orange01">￥1140起</span><a href="http://localhost/line/201307/298.html"><北京全景特价.</a></li>
+					</ul>
+	</div>
+</div>		<div class="toolbox mt10">
+			<h3>工具箱</h3>
+			<div class="box">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="main_right">
+		<div class="clearfix mt10">
+			<!--幻灯片-->
+			<div class="flashpicbox">
+				<div class="premenu"> <a href="#"> </a> </div>
+				<div class="nextmenu"> <a href="#"> </a> </div>
+				<div class="flashpic">
+					<ul>
+												<li> <img src="../upload/common/1369572925.jpg"> </li>
+                                               <li> <img src="../upload/common/1-11012H20017.jpg"> </li> 
+											</ul>
+				</div>
+			</div>
+			<!--幻灯片-->
+			<div class="commonbox2 mt10 clearfix">
+                <div class="rightbox">
+									<p><a href="http://localhost/line/201307/283.html" target="_blank"><img src="../upload/small/2013/09/0c4f4c7bd1188b1a8e25bcef08c28e07.jpg" class="img"></a></p>
+					<p class="title"><a href="http://localhost/line/201307/283.html" target="_blank"><夏威夷一地六日半自由行> 全程四星级酒店；2天自由活动！</a></p>
+					<p class="price01"><span class="fr">折扣：8.1折</span>原价：￥15900起</p>
+					<p class="price02">
+					  <span class="f16 fb orange01">￥12800起</span>
+					</p>
+				</div>
+		</div>
+		</div>
+		<div class="commonbox2 mt10 clearfix">
+			<div class="leftbox">
+				<h3>
+					<span class="more">
+					<a href="/index.php?mod=search&ac=search&catid=2&s_type=1">更多+</a></span><span class="title">精品线路</span><span class="english">OVERSEAS TOUR</span></h3>
+				<div class="box">
+					<ul class="travellist">
+												<li><span class="price">￥20800起</span><div class="title"><a href="http://localhost/line/201307/367.html" class="title1" target="_blank"><经典11日游></a> <a href="http://localhost/line/201307/367.html" class="title2" target="_blank">拉萨、纳木错、泽当、江孜、日喀则、珠峰</a></div></li>
+												<li><span class="price">￥20000起</span><div class="title"><a href="http://localhost/line/201307/366.html" class="title1" target="_blank"><俄罗斯+北欧（芬兰 瑞典 挪威 丹麦）+峡湾12日经典游></a> <a href="http://localhost/line/201307/366.html" class="title2" target="_blank">国航直飞 可配全国联运</a></div></li>
+												<li><span class="price">￥15800起</span><div class="title"><a href="http://localhost/line/201307/364.html" class="title1" target="_blank"><英格兰、苏格兰深度文化之旅7日游></a> <a href="http://localhost/line/201307/364.html" class="title2" target="_blank">世界著名的大学城-剑桥；英国老.</a></div></li>
+												<li><span class="price">￥17000起</span><div class="title"><a href="http://localhost/line/201307/363.html" class="title1" target="_blank"><芬兰、瑞典、丹麦、挪威（峡湾）9天></a> <a href="http://localhost/line/201307/363.html" class="title2" target="_blank">纳维亚半岛-欣赏挪威西海岸一带.</a></div></li>
+												<li><span class="price">￥20200起</span><div class="title"><a href="http://localhost/line/201307/361.html" class="title1" target="_blank"><俄罗斯+北欧（芬兰 瑞典 挪威 丹麦）+峡湾13日经典游></a> <a href="http://localhost/line/201307/361.html" class="title2" target="_blank">中国国际航空直飞欧洲，轻松旅.</a></div></li>
+												
+											</ul>
+				</div>
+			</div>
+			<div class="rightbox">
+									<p><a href="http://localhost/line/201307/366.html" target="_blank"><img src="" class="img"></a></p>
+					<p class="title"><a href="http://localhost/line/201307/366.html" target="_blank"><俄罗斯+北欧（芬兰 瑞典 挪威 丹. 国航直飞 可配全国联运</a></p>
+					<p class="price01"><span class="fr">折扣：9.8折</span>原价：￥20500起</p>
+					<p class="price02">
+						<span class="f16 fb orange01">￥20000起</span>
+					</p>
+		  </div>
+		</div>
+		<div class="commonbox2 mt10 clearfix">
+			<div class="leftbox">
+				<h3><span class="more">
+					 <a href="/index.php?mod=search&ac=search&catid=1&s_type=1">更多+</a></span><span class="title">著名景点</span><span class="english">DOMESTIC TOUR</span></h3>
+				<div class="box">
+					<ul class="travellist">
+												<li><span class="price">￥4180起</span><div class="title"><a href="http://localhost/line/201307/373.html" class="title1" target="_blank"><大美西藏全景游></a> <a href="http://localhost/line/201307/373.html" class="title2" target="_blank">布达拉宫.大昭寺.纳木措.羊卓雍.</a></div></li>
+												<li><span class="price">￥4180起</span><div class="title"><a href="http://localhost/line/201307/324.html" class="title1" target="_blank"><大美西藏全景精华游></a> <a href="http://localhost/line/201307/324.html" class="title2" target="_blank">布达拉宫.大昭寺.扎基寺.纳木措..</a></div></li>
+												<li><span class="price">￥4480起</span><div class="title"><a href="http://localhost/line/201307/315.html" class="title1" target="_blank"><阳光之旅2－林芝游></a> <a href="http://localhost/line/201307/315.html" class="title2" target="_blank"> 布达拉宫、大昭寺、林芝、鲁朗.</a></div></li>
+												<li><span class="price">￥4480起</span><div class="title"><a href="http://localhost/line/201307/314.html" class="title1" target="_blank"><阳光之旅1－全景游></a> <a href="http://localhost/line/201307/314.html" class="title2" target="_blank">布达拉宫、大昭寺、林芝、鲁朗.</a></div></li>
+												<li><span class="price">￥1140起</span><div class="title"><a href="http://localhost/line/201307/298.html" class="title1" target="_blank"><北京全景特价游></a> <a href="http://localhost/line/201307/298.html" class="title2" target="_blank"> 故宫  长城  颐和园</a></div></li>
+												<li><span class="price">￥180起</span><div class="title"><a href="http://localhost/line/201307/266.html" class="title1" target="_blank"><北京精华一日游></a> <a href="http://localhost/line/201307/266.html" class="title2" target="_blank">恭王府 清华大学 北京大学 </a></div></li>
+												<li><span class="price">￥150起</span><div class="title"><a href="http://localhost/line/201307/254.html" class="title1" target="_blank"><北京八达岭长城 定陵一日游></a> <a href="http://localhost/line/201307/254.html" class="title2" target="_blank">北京市内免费接送</a></div></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="rightbox">
+									<p><a href="http://localhost/line/201307/324.html" target="_blank"><img src="../upload/small/2013/09/285cd3b1f6a0f2d696d35f1e8f87af3c.jpg" class="img"></a></p>
+					<p class="title"><a href="http://localhost/line/201307/324.html" target="_blank"><大美西藏全景精华游> 布达拉宫.大昭寺.扎基寺.纳木措..</a></p>
+					<p class="price01"><span class="fr">折扣：8.9折</span>原价：￥4680起</p>
+					<p class="price02">
+						<span class="f16 fb orange01">￥4180起</span>
+					</p>
+							</div>
+		</div>
+		<div class="commonbox2 mt10 clearfix">
+			<div class="leftbox">
+				<h3><span class="more">
+
+									<a href="/index.php?mod=search&ac=search&catid=1&s_type=1">更多+</a></span><span class="title">自由行</span><span class="english">SEFL-GUIDED TOUR</span></h3>
+				<div class="box">
+					<ul class="travellist">
+												<li><span class="price">￥2150起</span><div class="title"><a href="http://localhost/line/201307/370.html" class="title1" target="_blank"><黄山观日出、宏村古村落+杭州两天休闲自由行></a> <a href="http://localhost/line/201307/370.html" class="title2" target="_blank"></a></div></li>
+												<li><span class="price">￥24800起</span><div class="title"><a href="http://localhost/line/201307/341.html" class="title1" target="_blank"><落日希腊爱琴海半自由行VIP8日游></a> <a href="http://localhost/line/201307/341.html" class="title2" target="_blank">希腊特色晚餐-圣岛悬崖餐厅龙虾.</a></div></li>
+												<li><span class="price">￥12800起</span><div class="title"><a href="http://localhost/line/201307/283.html" class="title1" target="_blank"><夏威夷一地六日半自由行></a> <a href="http://localhost/line/201307/283.html" class="title2" target="_blank">全程四星级酒店；2天自由活动！</a></div></li>
+												<li><span class="price">￥17500起</span><div class="title"><a href="http://localhost/line/201307/202.html" class="title1" target="_blank"><夏威夷欧胡岛半自由行8日></a> <a href="http://localhost/line/201307/202.html" class="title2" target="_blank">“品味天堂滋味“夏威夷一地半.</a></div></li>
+											</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+		<div class="foottop">
+			<a href="/about/index.html" class="topaboutus green01" target="_blank">关于我们</a><span> | </span> 
+			<a href="/about/91.html" class="topaboutus green01" target="_blank">经营资质</a><span> | </span> 
+			<a href="/about/93.html" class="topaboutus green01" target="_blank">员工风采</a><span> | </span> 
+			<a href="/about/92.html" class="topaboutus green01" target="_blank">办公场所</a><span> | </span>
+			<a href="/about/71.html" class="topaboutus green01" target="_blank">联系我们</a>
+		</div>
+		<div class="copyright">
+
+			<p>电话：0891-6336699   6360398   6360678    6326451   6326452  传真：0891-6335588   Q  Q：860891111 </p>
+			     <p>  邮箱：cyts-tibet@qq.com  地址：西藏拉萨市江苏路16号   邮编：850000  </p>      
+			
+		</div>
+ </div>
